@@ -1,1 +1,1 @@
-https://sudip22-p.github.io/snake_game
+https://sudip22-p.github.io/snake_game/
