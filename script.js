@@ -76,7 +76,8 @@ const changeDirectionUsingIcon = (idName) => {
       speedY = 0;
       break;
   }
-  // Update the game state.
+
+  // Update the game state-cont flow :
   loadGame();
 };
 
