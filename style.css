@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
+
 body{
     display: flex;
     justify-content: center;
@@ -11,6 +12,7 @@ body{
     min-height: 100vh;
     background-color: rgb(2, 38, 39);
 }
+
 .wrapper{
     display: flex;
     justify-content: center;
@@ -20,12 +22,14 @@ body{
     border-right: 10px solid rgb(6, 110, 114);
     border-radius: 12px;
 }
+
 .snake-board{
     width: 75vmin;
     height: 75vmin;
     display: grid;
     grid-template: repeat(24,1fr)/repeat(24,1fr);
 }
+
 .controls{
     color: rgb(10, 225, 82);
     width: 100%;
@@ -39,26 +43,32 @@ body{
     gap: 20px;
     cursor: pointer;
 }
+
 #score{
     width: 100%;
     padding: 10px;
     background-color: rgb(6, 110, 114);
 }
+
 h1{
     color: rgb(244, 50, 11);
     text-align: center;
     font-size: 36px;
     user-select: none;
 }
+
 .snake-board .food{
     background-color: #e5de0b;;
     width: 80%;
     border-radius: 50%;
 }
+
 .snake-board .snake-head{
     width: 100%;
     background-color: rgb(6, 246, 6);
 }
+
+
 @media (max-width:493px) {
     .snake-board{
         width: 400px;
