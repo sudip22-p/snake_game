@@ -53,6 +53,8 @@ const changeSnakeDirection = (event) => {
   loadGame();
 };
 
+
+
 // Alternate buttons for changing direction.
 const changeDirectionUsingIcon = (idName) => {
   // Change the snake's direction based on icon clicks.
@@ -78,6 +80,8 @@ const changeDirectionUsingIcon = (idName) => {
   loadGame();
 };
 
+
+
 //game over function
 const gameOver = () => {
   alert("GameOver !!! Press Ok to play Again!");
@@ -85,11 +89,15 @@ const gameOver = () => {
   location.reload();
 };
 
+
+
 const loadGame = () => {
   if (gameover) {
     gameOver();
   }
+
   let htmlTags = `<div class="food" style="grid-area:${foodY}/${foodX}"></div>`;
+
   if (snakeX === foodX && snakeY === foodY) {
     // If the snake eats the food, generate a new food position and make the snake longer.
     randomFoodPosition();
@@ -98,6 +106,7 @@ const loadGame = () => {
     score+=5;
     scoreEl.innerHTML="Score: "+score.toString();
   }
+
   for (let i = snakeSize.length - 1; i > 0; i--) {
     // Move each segment of the snake's body forward, except the head.
     snakeSize[i] = snakeSize[i - 1];
@@ -112,11 +121,13 @@ const loadGame = () => {
   for (let i = 0; i < snakeSize.length; i++) {
     // Create HTML code for each segment of the snake's body.
     htmlTags += `<div class="snake-head" style="grid-area:${snakeSize[i][1]}/${snakeSize[i][0]}"></div>`;
+
     //snake eating itself case
     if(i!==0 && snakeSize[0][1]===snakeSize[i][1] && snakeSize[0][0]===snakeSize[i][0]){
         gameover=true;
     }
   }
+
   // Update the game board with the new HTML representation.
   snakeBoard.innerHTML = htmlTags;
   if (snakeX > 30 || snakeX <= 0 || snakeY > 30 || snakeY <= 0) {
@@ -124,7 +135,9 @@ const loadGame = () => {
   }
 };
 
+
 intervalId = setInterval(loadGame, 180); // Start the game loop.
+
 // Control the snake's direction via icons.
 const iconControls = document.getElementsByClassName("icon-control");
 for (let index = 0; index < iconControls.length; index++) {
@@ -133,5 +146,7 @@ for (let index = 0; index < iconControls.length; index++) {
     changeDirectionUsingIcon(idName);
   });
 }
+
+
 // Control the snake's direction via keyboard input.
 document.addEventListener("keydown", changeSnakeDirection);
