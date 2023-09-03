@@ -90,65 +90,86 @@ h1{
         border-radius: 7px;
     }
 }
+
+
 @media (max-width:429px) {
     .snake-board{
         width: 350px;
         height: 350px;
     }
 }
+
+
 @media (max-width:383px) {
     .snake-board{
         width: 320px;
         height: 320px;
     }
 }
+
+
 @media (max-width:347px) {
     .snake-board{
         width: 300px;
         height: 300px;
     }
 }
+
+
 @media (max-width:316px) {
     .snake-board{
         width: 270px;
         height: 270px;
     }
 }
+
+
 @media (max-width:291px) {
     .snake-board{
         width: 250px;
         height: 250px;
     }
 }
+
+
 @media (max-width:263px) {
     .snake-board{
         width: 210px;
         height: 210px;
     }
 }
+
+
 @media (max-width:239px) {
     .snake-board{
         width: 180px;
         height: 180px;
     }
+
     .controls{
         display: grid;
         grid-template: repeat(2,1fr)/repeat(2,1fr);
         align-items: center;
     }
 }
+
+
 @media (max-width:187px) {
     .snake-board{
         width: 150px;
         height: 150px;
     }
 }
+
+
 @media (max-width:153px) {
     .snake-board{
         width: 120px;
         height: 120px;
     }
 }
+
+
 @media (max-width:123px) {
     .snake-board{
         width: 90px;
