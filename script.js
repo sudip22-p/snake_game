@@ -1,4 +1,4 @@
-const snakeBoard = document.querySelector(".snake-board"); // Get the game board element.
+const snakeBoard = document.querySelector(".snake-board"); 
 const scoreEl=document.getElementById("score");
 
 let snakeX = Math.floor(Math.random() * 21) + 2;
