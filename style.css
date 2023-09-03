@@ -75,8 +75,8 @@ h1{
         height: 400px;
     }
     .controls{
-        font-size: 36px;
-        gap: 7px;
+        font-size: 40px;
+        gap: 20px;
     }
     #score{
         padding: 3px;
